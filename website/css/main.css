@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rock+Salt&display=swap');
+@import url('scroll.css');
 
 html{
 
@@ -10,15 +11,25 @@ html{
     box-sizing: inherit;
 }
 
-/*@media (prefers-color-scheme: dark) {
+:root{
+    --bg-color: #ffffff;
+    --text-color: #7f0f0f;
+}
+
+@media (prefers-color-scheme: dark) {
     :root{
         --bg-color: #7f0f0f;
         --text-color: #ffffff;
     }
-}*/
+}
+
+li {
+    list-style: none;
+}
 
 body{
-    background-color: #7f0f0f;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-family: 'Inter', sans-serif;
     min-height: 100%;
     display: flex;
@@ -41,7 +52,6 @@ h1,h2,h3,h4,h5,h6{
 /*compu o tablet*/
 @media (min-width: 500px){
     body{
-        background:#7f0f0f;
         font-size: 16px;
     }
 }
@@ -49,7 +59,6 @@ h1,h2,h3,h4,h5,h6{
 /*compu grande, escritorio*/
 @media (min-width: 1024px){
     body{
-        background:#7f0f0f;
         font-size: 18px;
     }
 }
@@ -63,7 +72,7 @@ header{
     width:100%;
 }
 
-nav ul{
+header nav ul{
     display: flex;
     margin: 0;
     padding: 0;
@@ -71,12 +80,11 @@ nav ul{
     justify-content: center;
 }
 
-nav ul li {
+heather nav ul li {
     display: inline;
 }
 
 a{
-    color:#7f0f0f ;
     font-weight: 600;
     text-decoration: none;
     padding: 0.25em .5em;
@@ -85,7 +93,8 @@ a{
 }
 
 a:hover {
-    background-color: #7f0f0f;
+    background-color: var(--text-color);
+    color: var(--bg-color);
 }
 
 
