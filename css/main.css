@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rock+Salt&display=swap');
+
+html{
+
+    box-sizing: border-box;
+    height: 100%;   
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/*@media (prefers-color-scheme: dark) {
+    :root{
+        --bg-color: #7f0f0f;
+        --text-color: #ffffff;
+    }
+}*/
+
+body{
+    background-color: #7f0f0f;
+    font-family: 'Inter', sans-serif;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /*telefono*/
+    font-size:14px;
+    line-height: 1.4em;
+    overflow: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Rock Salt', cursive;
+    font-weight: 400;
+    font-size: 100%;
+    font-style: normal;
+}
+
+/*compu o tablet*/
+@media (min-width: 500px){
+    body{
+        background:#7f0f0f;
+        font-size: 16px;
+    }
+}
+
+/*compu grande, escritorio*/
+@media (min-width: 1024px){
+    body{
+        background:#7f0f0f;
+        font-size: 18px;
+    }
+}
+
+h1{
+    font-size: 2.5em;
+    line-height: 1.14em;
+}
+
+header{
+    width:100%;
+}
+
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+a{
+    color:#7f0f0f ;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.25em .5em;
+    text-transform: uppercase;
+    min-width: 42px;
+}
+
+a:hover {
+    background-color: #7f0f0f;
+}
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+
+article {
+    width: 80%;
+    max-width: 800px;
+    padding: 1em;
+    margin: 0 auto; 
+}
+
+p {
+    max-width: 60ch; 
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 1em;
+    width: 90%;
+    min-width: 290px;
+    max-width: 1200px;
+}
+
+nav.container {
+    padding: 1em;
+}
